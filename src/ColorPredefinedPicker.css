@@ -1,0 +1,72 @@
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .hidden {
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    background-color: #fff;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 0.2s;
+    position: absolute;
+    padding: 4px;
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+    border: #ababab;
+    border-style: solid;
+    border-radius: 10%;
+    border-width: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+  }
+
+  .selected {
+    border-radius: 50%;
+    min-width: 24px;
+    min-height: 24px;
+  }
+
+  .table {
+    display: grid;
+    grid-row-gap: 0px;
+    column-gap: 0px;
+    
+  }
+
+  .item {
+    border-radius: 50%;
+    border-width: 2px;
+    border: #fff;
+    border-style: solid;
+  }
+
+  .item:hover {
+    width: "5px";
+    color: #fff;
+    border: #fff;
+    border-style: solid;
+    border-width: 0px;
+  }
+
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0; }
+    to {opacity: 1; }
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0; }
+    to {opacity:1; }
+  }
