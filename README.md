@@ -16,7 +16,6 @@ npm install --save react-predefined-color-picker
 import React, { Component } from 'react'
 
 import ColorPredefinedPicker from 'react-predefined-color-picker'
-import 'react-predefined-color-picker/dist/index.css'
 
 class Example extends Component {
   render() {
@@ -24,6 +23,14 @@ class Example extends Component {
   }
 }
 ```
+
+
+## Props
+
+| Prop                   | Type                | Required | Default       | Note                                                                                                                                                                                                         |
+| ---------------------- | ------------------- | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| size                   | string              | No       | medium        | Size. Possible options are: `small`, `medium`, `large`
+| columns                | number              | No       | 3             | Number of columns
 
 ## License
 
