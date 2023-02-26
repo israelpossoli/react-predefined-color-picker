@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import './ColorPredefinedPicker.css'
+import "./style.css"
 
 const DefaultColors = [
     'blue',

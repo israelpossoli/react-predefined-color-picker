@@ -1,19 +1,15 @@
-/* Popup container */
 .color-predefined-picker {
     position: relative;
     display: inline-block;
 }
 
-/* The actual popup (appears on top) */
 .color-predefined-picker .hidden {
     visibility: hidden;
     position: absolute;
 }
 
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
 .color-predefined-picker .show {
-    
     visibility: visible;
     background-color: #fff;
     -webkit-animation: fadeIn 1s;
@@ -56,8 +52,6 @@
     border-width: 0px;
 }
 
-
-/* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
