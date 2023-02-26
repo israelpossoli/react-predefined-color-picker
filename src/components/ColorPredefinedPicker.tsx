@@ -8,7 +8,9 @@ const DefaultColors = [
     'green',
     'gray',
     'purple',
-    'pink'             
+    'pink',
+    '#2668CA',
+    'rgb(30, 40, 50)',
 ]
 
 interface ColorPredefinedPickerProps {
