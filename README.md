@@ -1,5 +1,7 @@
 # react-predefined-color-picker
 
+:construction: Under development :construction:
+
 > A tiny color predefined picker component for React and Preact apps
 
 [![NPM](https://img.shields.io/npm/v/react-predefined-color-picker.svg)](https://www.npmjs.com/package/react-predefined-color-picker) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -40,4 +42,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [israelpossoli](https://github.com/israelpossoli)
+MIT Â© [israelpossoli](https://github.com/israelpossoli)
