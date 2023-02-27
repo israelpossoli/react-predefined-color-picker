@@ -1,6 +1,6 @@
 {
   "name": "react-predefined-color-picker",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "A tiny color predefined picker component for React and Preact apps",
   "author": "israelpossoli",
   "license": "MIT",

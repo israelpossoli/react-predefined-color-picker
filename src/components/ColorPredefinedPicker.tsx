@@ -69,13 +69,15 @@ const PoupupItem = styled.div`
 interface ColorPredefinedPickerProps {
     colors?: Array<string>
     columns?: number
+    color?: string,
     size?: "small" | "medium" | "large"
     onChange: (color: string) => void;
+    // setColor?: (color: string) => void;
 }
 
-function ColorPredefinedPicker({ colors = DefaultColors, size = "medium", columns = 3, onChange }: ColorPredefinedPickerProps) {
+function ColorPredefinedPicker({ colors = DefaultColors, size = "medium", columns = 3, color = DefaultColors[0], onChange}: ColorPredefinedPickerProps) {
     const [open, setOpen] = useState(false)
-    const [selectedColor, setSelectedColor] = useState(DefaultColors[0])
+    const [selectedColor, setSelectedColor] = useState(color)
     const Colors = colors ? colors : DefaultColors
 
     const handleClick = () => {

@@ -14,6 +14,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 export const Default: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker onChange={(e) => console.log(e)}/>;
+export const SelectedColor: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker color="red" onChange={(e) => console.log(e)}/>;
 
 export const Columns: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker columns={4} onChange={(e) => console.log(e)}/>;
 

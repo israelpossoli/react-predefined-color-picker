@@ -40,6 +40,7 @@ function Example() {
 | Prop                   | Type                | Required | Default       | Note                                                                                                                                                                                                         |
 | ---------------------- | ------------------- | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | onChange               | EventHandler        | **Yes**  |               | Event Handler
+| color                  | string              | No       |               | Selected color
 | colors                 | Array of string     | No       |               | Array of strings containing colors. Eg: `["red", "blue", "#2668CA", "rgb(30, 40, 50)"]`
 | size                   | string              | No       | medium        | Size. Possible options are: `small`, `medium`, `large`
 | columns                | number              | No       | 3             | Number of columns
