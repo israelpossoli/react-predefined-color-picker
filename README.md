@@ -23,10 +23,14 @@ import React, { Component } from 'react'
 
 import ColorPredefinedPicker from 'react-predefined-color-picker'
 
-class Example extends Component {
-  render() {
-    return <ColorPredefinedPicker />
+function Example() {
+  function handleColorChange(color) {
+    console.log(color)
   }
+
+  return(
+    <ColorPredefinedPicker onChange={(color) => handleColorChange(color)} />
+  )
 }
 ```
 
@@ -35,9 +39,11 @@ class Example extends Component {
 
 | Prop                   | Type                | Required | Default       | Note                                                                                                                                                                                                         |
 | ---------------------- | ------------------- | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| onChange               | EventHandler        | **Yes**  |               | Event Handler
 | colors                 | Array of string     | No       |               | Array of strings containing colors. Eg: `["red", "blue", "#2668CA", "rgb(30, 40, 50)"]`
 | size                   | string              | No       | medium        | Size. Possible options are: `small`, `medium`, `large`
 | columns                | number              | No       | 3             | Number of columns
+
 
 
 ## License

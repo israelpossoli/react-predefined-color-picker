@@ -13,9 +13,9 @@ export default {
   } as ComponentMeta<typeof ColorPredefinedPicker>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-export const Default: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker />;
+export const Default: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker onChange={(e) => console.log(e)}/>;
 
-export const Columns: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker columns={4}/>;
+export const Columns: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker columns={4} onChange={(e) => console.log(e)}/>;
 
-export const Small: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker size="small"/>;
-export const Large: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker size="large"/>;
+export const Small: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker size="small" onChange={(e) => console.log(e)}/>;
+export const Large: ComponentStory<typeof ColorPredefinedPicker> = () => <ColorPredefinedPicker size="large" onChange={(e) => console.log(e)}/>;

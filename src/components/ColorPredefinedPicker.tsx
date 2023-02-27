@@ -70,9 +70,10 @@ interface ColorPredefinedPickerProps {
     colors?: Array<string>
     columns?: number
     size?: "small" | "medium" | "large"
+    onChange: (color: string) => void;
 }
 
-function ColorPredefinedPicker({ colors = DefaultColors, size = "medium", columns = 3 }: ColorPredefinedPickerProps) {
+function ColorPredefinedPicker({ colors = DefaultColors, size = "medium", columns = 3, onChange }: ColorPredefinedPickerProps) {
     const [open, setOpen] = useState(false)
     const [selectedColor, setSelectedColor] = useState(DefaultColors[0])
     const Colors = colors ? colors : DefaultColors
@@ -84,6 +85,8 @@ function ColorPredefinedPicker({ colors = DefaultColors, size = "medium", column
     const SelectColor = (color: string) => {
         setSelectedColor(color)
         setOpen(false)
+        onChange(color)
+        // onSelectColor(color)
     }
 
     const handleClose = () => {
