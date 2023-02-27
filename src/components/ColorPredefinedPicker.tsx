@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
-import "./style.css"
+import styled from 'styled-components';
+// import "../index.css"
 
 const DefaultColors = [
     'blue',
@@ -12,6 +13,11 @@ const DefaultColors = [
     '#2668CA',
     'rgb(30, 40, 50)',
 ]
+
+const Container = styled.div`
+    position: relative;
+    display: inline-block;
+    `
 
 interface ColorPredefinedPickerProps {
     colors?: Array<string>
@@ -60,6 +66,7 @@ function ColorPredefinedPicker({ colors = DefaultColors, size = "medium", column
 
     return (
         <>
+            <Container>a</Container>
             <div className="color-predefined-picker">
                 <div onClick={handleClick}
                     className="button"
